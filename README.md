@@ -2,6 +2,8 @@
 
 This is a simple custom hook that prints text with an adjustable delay.
 
+[![Node CI](https://github.com/M9lTHblu/use-print-text/actions/workflows/NodeCI.yml/badge.svg)](https://github.com/M9lTHblu/use-print-text/actions/workflows/NodeCI.yml)
+
 ## Installation
 
 ```
