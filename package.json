@@ -1,27 +1,57 @@
 {
   "name": "use-print-text",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/M9lTHblu"
+  },
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple react hook that prints text with a delay",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
   "types": "dist/index.d.ts",
+  "jest": {
+    "testEnvironment": "jsdom",
+    "verbose": true,
+    "transform": {
+      "\\.(ts|tsx)?$": "ts-jest"
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.ts"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
   "scripts": {
     "test": "jest"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "custom hooks"
+  ],
   "author": "Serge Ivlev",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.3",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.2.1",
+    "@types/jest": "^28.1.4",
+    "@types/node": "^18.0.3",
     "@types/react": "^18.0.15",
+    "jest": "^28.1.2",
+    "jest-environment-jsdom": "^28.1.2",
     "react": "^18.2.0",
     "rollup": "^2.76.0",
     "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "ts-jest": "^28.0.5",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
   },
