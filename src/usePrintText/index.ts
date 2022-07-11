@@ -1,1 +1,1 @@
-export {usePrintText} from './usePrintText'
+export {usePrintText} from './usePrintText';

@@ -2,9 +2,9 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import nodeResolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
+import eslint from '@rollup/plugin-eslint';
 import dts from 'rollup-plugin-dts';
-
-const packageJson = require('./package.json');
+import packageJson from './package.json';
 
 export default [
   {
@@ -25,7 +25,10 @@ export default [
       peerDepsExternal(),
       nodeResolve(),
       commonjs(),
-      typescript({tsconfig: './tsconfig.json'}),
+      eslint(),
+      typescript({
+        tsconfig: './tsconfig.json',
+      }),
     ],
   },
   {
