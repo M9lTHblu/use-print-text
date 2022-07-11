@@ -11,7 +11,7 @@ nmp install use-print-text
 ```
 ## Usage
 Hook returns ref.
-```
+```javascript
 import { usePrintText } from 'use-print-text';
 
 const Component = () => {
