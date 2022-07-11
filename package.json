@@ -1,0 +1,31 @@
+{
+  "name": "use-print-text",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Serge Ivlev",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@types/react": "^18.0.15",
+    "react": "^18.2.0",
+    "rollup": "^2.76.0",
+    "rollup-plugin-dts": "^4.2.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  },
+  "peerDependencies": {
+    "react": "*"
+  }
+}

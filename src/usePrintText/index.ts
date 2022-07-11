@@ -1,0 +1,1 @@
+export {usePrintText} from './usePrintText'
