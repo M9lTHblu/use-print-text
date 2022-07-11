@@ -2,6 +2,7 @@
   "name": "use-print-text",
   "version": "1.0.0",
   "description": "A simple react hook that prints text with a delay",
+  "repository": "https://github.com/M9lTHblu/use-print-text.git",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
