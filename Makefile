@@ -1,3 +1,5 @@
+install:
+	npm ci
 build:
 	rm -rf dist
 	npx rollup -c
