@@ -12,7 +12,7 @@ Hook returns ref.
 ```
 import { usePrintText } from 'use-print-text';
 
-const Components = () => {
+const Component = () => {
     const divRef = usePrintText('foo', 200)
     
     return (
