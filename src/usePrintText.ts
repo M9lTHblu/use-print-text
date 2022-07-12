@@ -6,10 +6,9 @@ export interface Options {
   startDelay?: number;
 }
 
-
 export const usePrintText = (
     text: string,
-    delay: number = 200,
+    delay = 200,
     options: Options = {once: false, startDelay: 500},
 ): any => {
 
@@ -17,8 +16,8 @@ export const usePrintText = (
   const count = useRenderCount();
 
   useEffect(() => {
-    let index: number = 0;
-    let intervalId: any;
+    let index = 0;
+    let intervalId: NodeJS.Timer;
 
     if (textRef.current !== null) {
       textRef.current.textContent = '';
@@ -34,8 +33,7 @@ export const usePrintText = (
       }
     }
 
-
-    const timeOutId = setTimeout(() => {
+    const timeId = setTimeout(() => {
       intervalId = setInterval(() => {
         if (index >= text.length - 1) {
           if (textRef.current !== null) {
@@ -52,7 +50,7 @@ export const usePrintText = (
     }, options.startDelay);
 
     return () => {
-      clearTimeout(timeOutId);
+      clearTimeout(timeId);
       clearInterval(intervalId);
     };
   });

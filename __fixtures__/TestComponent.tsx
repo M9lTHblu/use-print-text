@@ -1,3 +1,4 @@
+import * as React from 'react';
 import {usePrintText} from '../src';
 import { Options } from '../src/usePrintText';
 

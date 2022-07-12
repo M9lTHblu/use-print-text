@@ -9,7 +9,6 @@
     "sourceMap": true,
     "outDir": "dist",
     "declarationDir": "types",
-    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -20,6 +19,7 @@
   ],
   "exclude": [
     "__tests__/**/*",
+    "__fixtures__/**/*",
     "setupTests.ts"
   ]
 }
