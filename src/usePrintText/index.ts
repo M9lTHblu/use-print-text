@@ -1,1 +1,0 @@
-export {usePrintText} from './usePrintText';

@@ -1,28 +1,15 @@
 import * as React from 'react';
 import {screen, render} from '@testing-library/react';
-import {usePrintText} from '../src';
-import {RefObject} from 'react';
+import TestComponent from '../__fixtures__/TestComponent';
 
 describe('usePrintText tests', () => {
-  test('should return "hello"', async () => {
-    const TestComponent = (): JSX.Element => {
-      const ref = usePrintText('hello World!', 0);
-      return <div ref={ref as RefObject<HTMLDivElement>} />;
-    };
-    render(<TestComponent />);
-    const div = await screen.findByText('hello World!');
-    expect(div).toBeInTheDocument();
+  test('should return "test" text', async () => {
+    render(<TestComponent text='test' delay={0} />);
+
+    expect(screen.queryByText(/test/i)).toBeNull();
+    expect(await screen.findByText(/test/i)).toBeInTheDocument();
   });
 
-  test('should return "hello"', async () => {
-    const TestComponent = (): JSX.Element => {
-      const ref = usePrintText('', 0);
-      return <div ref={ref as RefObject<HTMLDivElement>} data-testid='test' />;
-    };
-    render(<TestComponent />);
-    const div = await screen.findByTestId('test');
-    expect(div).toBeInTheDocument();
-    expect(div.textContent).toBe('');
-  });
 });
+
 

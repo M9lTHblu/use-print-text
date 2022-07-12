@@ -7,7 +7,7 @@ This is a simple custom hook that prints text with an adjustable delay.
 ## Installation
 
 ```
-nmp install use-print-text
+npm install use-print-text
 ```
 ## Usage
 Hook returns ref.
