@@ -28,7 +28,6 @@ usePrintText(text, delay[, options])
 ### Parameters
 * `text` String to printed.
 * `delay` To delay printing. (*default 200*)
-<hr/>
 
 * `options` (*optional*)
   + `once`(*default false*)
