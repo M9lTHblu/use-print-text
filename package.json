@@ -34,7 +34,7 @@
     "custom hooks"
   ],
   "author": "Serge Ivlev",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-eslint": "^8.0.2",
