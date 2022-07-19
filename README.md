@@ -15,13 +15,28 @@ Hook returns ref.
 import { usePrintText } from 'use-print-text';
 
 const Component = () => {
-    const divRef = usePrintText('foo', 200, {once: false, startDelay: 3000})
+  const divRef = usePrintText('foo', 200, {once: false, startDelay: 3000})
     
-    return (
+  return (
         <div ref={divRef} />
     );
 }
  ```
+ ### With styled-components
+ ```javascript
+import { usePrintText } from 'use-print-text';
+
+const StyledComponent = styled.div.attrs(({ref}) => ({
+      ref: ref,
+    }))``
+
+ const App = () => {
+   const divRef = usePrintText('foo')
+
+   return <StyledComponent ref={divRef}/>
+ };
+ ```
+ 
 ## Syntax
 usePrintText(text, delay[, options])
 
