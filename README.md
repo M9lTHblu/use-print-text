@@ -24,6 +24,7 @@ const Component = () => {
  ```
  ### With styled-components
  ```javascript
+import styled from 'styled-components';
 import { usePrintText } from 'use-print-text';
 
 const StyledComponent = styled.div.attrs(({ref}) => ({
